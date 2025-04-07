@@ -1,0 +1,76 @@
+PlanejaFit - Frontend
+Visão geral:
+O PlanejaFit é um sistema de gerenciamento para academias, que permite a visualização de métricas, controle de metas, planos de treino e interação com usuários. Este repositório contém o frontend da aplicação, desenvolvido utilizando Next.js, React e Tailwind CSS.
+
+Tecnologias utilizadas:
+Next.js: Framework para construção de páginas dinâmicas, com renderização do lado servidor (SSR) e lado cliente (CSR). Usado para construção de páginas otimizadas com SEO.
+
+React: Biblioteca JavaScript para construir interfaces de usuário dinâmicas. Usada para componentes reutilizáveis.
+
+Tailwind CSS: Framework CSS utilitário para criação de interfaces responsivas e estilizadas.
+
+Git: Controle de versão utilizado para o gerenciamento do código e integração com o repositório GitHub.
+
+GitHub: Plataforma de hospedagem de código onde o repositório está armazenado.
+
+Funcionalidades implementadas:
+Dashboard completo:
+
+Sidebar interativa para navegação
+
+Tabela de clientes
+
+Estatísticas dinâmicas na TopBar
+
+Paginação:
+
+Implementação de um componente de paginação funcional
+
+Números de página são destacados com a cor roxa quando selecionados
+
+Search (Barra de busca):
+
+Componente de busca implementado na interface para pesquisa de clientes
+
+Design Responsivo:
+
+Layout responsivo usando Tailwind CSS para garantir visualização adequada em diferentes dispositivos
+
+Instruções para execução:
+Clonando o repositório: Para clonar o repositório:
+
+bash
+Copiar
+Editar
+git clone git@github.com:sysborg/planejafit-frontend.git
+Instalação de dependências: Após clonar o repositório, navegue até a pasta do projeto e instale as dependências:
+
+bash
+Copiar
+Editar
+cd planejafit-frontend
+npm install
+Rodando o projeto: Para rodar o projeto localmente:
+
+bash
+Copiar
+Editar
+npm run dev
+O projeto será executado na URL: http://localhost:3000.
+
+Arquitetura do Projeto:
+bash
+Copiar
+Editar
+/components                # Componentes reutilizáveis como Sidebar, TopBar, SearchBar, Pagination
+  ├── DashboardSidebar.jsx
+  ├── TopBar.jsx
+  ├── SearchBar.jsx
+  ├── Pagination.jsx
+/pages                     # Páginas do Next.js
+  ├── index.js             # Página inicial com o dashboard
+/public                    # Arquivos estáticos, como ícones e imagens
+  ├── search-1.svg         # Ícone utilizado na barra de busca
+/tailwind.config.js        # Arquivo de configuração do Tailwind CSS
+/postcss.config.js         # Configuração para pós-processamento CSS
+/package.json              # Gerenciador de dependências e scripts de build
